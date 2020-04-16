@@ -2,7 +2,7 @@
 
 {{ component( "Ceres::Customer.Components.UserLoginHandler" ) }}
 {{ component( "Ceres::PageDesign.Components.ShippingCountrySelect" ) }}
-{{ component( "PlentyTheme::PageDesign.Components.MobileNavigation" ) }}
+{{ component( "PlentyTheme5::PageDesign.Components.MobileNavigation" ) }}
 {{ component( "Ceres::ItemList.Components.ItemSearch" ) }}
 {{ component( "Ceres::WishList.Components.WishListCount" ) }}
 {{ component( "Ceres::Basket.Components.BasketPreviewHover" ) }}
@@ -17,7 +17,7 @@
 
 {% set headerContainer = LayoutContainer.show("Ceres::Header") | trim %}
 {% if headerContainer is empty %}
-    {% include "PlentyTheme::PageDesign.Partials.Header.DefaultHeader" %}
+    {% include "PlentyTheme5::PageDesign.Partials.Header.DefaultHeader" %}
 {% else %}
 <header id="page-header" class="fixed-top">
     <div class="container-max">

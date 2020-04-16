@@ -1,35 +1,35 @@
 {
     "version"           :   "1.0.6",
-    "name"              :   "PlentyTheme",
+    "name"              :   "PlentyTheme5",
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
     "description"       :   "",
-    "namespace"         :   "PlentyTheme",
+    "namespace"         :   "PlentyTheme5",
     "author"            :   "plentysystems AG",
     "type"              :   "theme",
     "require"           :   {
                                 "Ceres":"~5.0"
                             },
-    "serviceProvider"   :   "PlentyTheme\\Providers\\PlentyThemeServiceProvider",
+    "serviceProvider"   :   "PlentyTheme5\\Providers\\PlentyTheme5ServiceProvider",
     "dataProviders"     :
     [
         {
-            "key"           :"PlentyTheme\\Containers\\PlentyThemeContainer",
+            "key"           :"PlentyTheme5\\Containers\\PlentyTheme5Container",
             "name"          :"Stylesheet",
             "description"   :"Add changes to the CSS file"
         },
         {
-            "key"           :"PlentyTheme\\Containers\\PlentyThemeItemListContainer1",
+            "key"           :"PlentyTheme5\\Containers\\PlentyTheme5ItemListContainer1",
             "name"          :"First item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"PlentyTheme\\Containers\\PlentyThemeItemListContainer2",
+            "key"           :"PlentyTheme5\\Containers\\PlentyTheme5ItemListContainer2",
             "name"          :"Second item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"PlentyTheme\\Containers\\PlentyThemeItemListContainer3",
+            "key"           :"PlentyTheme5\\Containers\\PlentyTheme5ItemListContainer3",
             "name"          :"Third item list",
             "description"   :"Display a configurable list of items in your online store"
         }

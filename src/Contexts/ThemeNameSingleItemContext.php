@@ -1,5 +1,5 @@
 <?php
-namespace PlentyTheme\Contexts;
+namespace PlentyTheme5\Contexts;
 
 use IO\Helper\ContextInterface;
 use Ceres\Contexts\SingleItemContext;
