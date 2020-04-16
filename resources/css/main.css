@@ -73,7 +73,7 @@ div:not(.top-bar) > .page-header > div > .cmp-search-box{
 .navbar{
     background-color: #2b2b2b;
 }
-#page-header.top-bar{
+.top-bar{
     background-color: #000000;
 }
 .footer-column h2{
