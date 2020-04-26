@@ -17,7 +17,19 @@
                 <div class="top-bar header-fw">
                     <div class="container-max px-0 pr-lg-3">
                         <div class="row mx-0 flex-row-reverse position-relative">
-                            {{ LayoutContainer.show("Ceres::Header.LeftSide") }}
+                            <div class="brand-wrapper brand_desktop" {% if showHeaderNavBar == "side" %}style="position: relative"{% endif %}>
+                                <a class="navbar-brand" href="{{ homepageURL }}">
+                                    {% if ('http' in companyLogo) or ('layout/' in companyLogo) %}
+                                        <img alt="{{ companyName }}" src="{{ companyLogo }}" class="img-fluid" />
+                                    {% else %}
+                                        <img alt="{{ companyName }}" src="{{ plugin_path('Ceres') }}/{{ companyLogo }}" class="img-fluid" />
+                                    {% endif %}
+                                </a>
+        
+                                <button id="btnMainMenuToggler" v-open-mobile-navigation class="navbar-toggler d-lg-none" type="button">
+                                &#9776;
+                                </button>
+                            </div>
                             <div class="top-bar-items">
                                 <div class="controls">
                                     <ul id="controlsList" class="controls-list mb-0 d-flex list-inline pl-2 pl-sm-1 pl-md-0">
