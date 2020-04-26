@@ -20,7 +20,7 @@
                 </button>
             </div>
 
-            <div class="main-navbar-collapsable d-none d-lg-block">
+            <div id="mainNavbarCollapsable" class="d-none d-lg-block">
                 {% if showHeaderNavBar == "top" or showHeaderNavBar == "both" or not services.template.isCategory() %}
                     {% include "PlentyTheme5::PageDesign.Partials.Header.NavigationList" %}
                 {% endif %}
