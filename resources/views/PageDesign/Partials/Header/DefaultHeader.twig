@@ -1,8 +1,5 @@
 {% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
 
-{% set companyLogo  = config("Ceres.header.company_logo") %}
-{% set companyName  = trans("Ceres::Template.headerCompanyName") %}
-
 <header id="page-header" class="fixed-top default-header d-print-none">
     <div class="top-headline">
         <div class="row mx-0">    
@@ -18,21 +15,9 @@
         <div class="row flex-row-reverse position-relative">
             <div id="page-header-parent" class="col-12 header-container" data-header-offset>
                 <div class="top-bar header-fw">
-                    <div class="container-max px-3 pr-lg-3">
+                    <div class="container-max px-0 pr-lg-3">
                         <div class="row mx-0 flex-row-reverse position-relative">
-                            <div class="brand-wrapper brand_desktop" {% if showHeaderNavBar == "side" %}style="position: relative"{% endif %}>
-                                <a class="navbar-brand" href="{{ homepageURL }}">
-                                    {% if ('http' in companyLogo) or ('layout/' in companyLogo) %}
-                                        <img alt="{{ companyName }}" src="{{ companyLogo }}" class="img-fluid" />
-                                    {% else %}
-                                        <img alt="{{ companyName }}" src="{{ plugin_path('Ceres') }}/{{ companyLogo }}" class="img-fluid" />
-                                    {% endif %}
-                                </a>
-        
-                                <button id="btnMainMenuToggler" v-open-mobile-navigation class="navbar-toggler d-lg-none" type="button">
-                                &#9776;
-                                </button>
-                            </div>
+                            {{ LayoutContainer.show("Ceres::Header.LeftSide") }}
                             <div class="top-bar-items">
                                 <div class="controls">
                                     <ul id="controlsList" class="controls-list mb-0 d-flex list-inline pl-2 pl-sm-1 pl-md-0">

@@ -6,8 +6,7 @@
     padding-left: 0;
 }
 */
-
-#mainNavbarCollapsable ul.mainmenu,
+#mainNavbarCollapsable ul.mainmenu
 #mainNavbarCollapsable{    
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -312,8 +311,7 @@ nav.navbar.megamenu{
 .brand_desktop{
     display: none;
     position: absolute;
-    left: 0;
-    top: -7px;    
+    left: 0;    
 }
 
 
