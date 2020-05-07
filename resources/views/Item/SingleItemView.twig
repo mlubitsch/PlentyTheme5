@@ -28,7 +28,7 @@
     
     <!-- HAUPTCONTAINER (SUBCONTAINER) 2|3|6|4(11)|7(12)|8(13)|9(14)| -->     
     <template #itemviewboxes>
-    
+        {{ item.documents[0].data | json_encode }}
         <!-- CHECK SUBCONTAINER -->                
         {% set itemviewbox11 = "" %}
         {% set itemviewbox12 = "" %}

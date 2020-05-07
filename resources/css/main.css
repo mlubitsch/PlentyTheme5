@@ -6,8 +6,8 @@
     padding-left: 0;
 }
 */
-.megamenu .collapse{top: 36px;}
-#mainNavbarCollapsable ul.mainmenu li:hover{
+.megamenu .collapse{top: 33px;}
+#mainNavbarCollapsable ul.mainmenu:not(.nav-dropdown-inner) li:hover{
     background-color: #e30d7c;   
 }
 #mainNavbarCollapsable ul.mainmenu,
