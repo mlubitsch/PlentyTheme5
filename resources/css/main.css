@@ -6,7 +6,10 @@
     padding-left: 0;
 }
 */
-
+.megamenu .collapse{top: 36px;}
+#mainNavbarCollapsable ul.mainmenu li:hover{
+    background-color: #e30d7c;   
+}
 #mainNavbarCollapsable ul.mainmenu,
 #mainNavbarCollapsable{    
     -webkit-box-flex: 1;
@@ -142,7 +145,7 @@ div:not(.top-bar) > .page-header > div > .cmp-search-box{
 #mainNavbarCollapsable ul.mainmenu{
     float: none;
 }
-#mainNavbarCollapsable ul.mainmenu{
+#mainNavbarCollapsable ul.mainmenu a{
     color: #bcbdc0;
     text-align: left;
 }
@@ -152,6 +155,7 @@ div:not(.top-bar) > .page-header > div > .cmp-search-box{
 #mainNavbarCollapsable ul.mainmenu:not(.nav-dropdown-inner) > li{
     flex-grow: 1;
     border-left: 1px solid grey;
+    padding: 6px 0;
 }
 #mainNavbarCollapsable ul.mainmenu:not(.nav-dropdown-inner) > li:last-child{
     border-right: 1px solid grey;
