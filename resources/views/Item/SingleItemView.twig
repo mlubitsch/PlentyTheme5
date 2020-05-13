@@ -1,0 +1,21 @@
+<single-item v-cloak item-data="{{ item | json_data }}"
+             attributes-data="{{ attributes | json_data }}"
+             variations="{{ variations | json_data }}"
+             :after-key="{{ afterKey | json_encode }}"
+             :please-select-option-variation-id="{{ dynamicVariationId }}"
+             :show-net-prices="{{ services.customer.showNetPrices() | json_encode }}"
+             :is-wish-list-enabled="{{ services.url.isRouteEnabled("wish-list") | json_encode }}"
+             :init-please-select-option="{{ initPleaseSelectOption | json_encode }}"
+             :item-id="{{ item.documents[0].data.item.id }}">
+    <template #feedback-container>{{ LayoutContainer.show("Ceres::SingleItem.FeedbackContainer", item) }}</template>
+    <template #image-carousel>
+        {% set ImageCarouselOverride = LayoutContainer.show("Ceres::SingleItem.ImageCarousel") %}
+        {% if ImageCarouselOverride|trim is empty %}
+            <item-image-carousel plugin-path="{{ plugin_path('Ceres') }}" image-url-accessor="url"></item-image-carousel>
+        {% else %}
+            {{ ImageCarouselOverride }}
+        {% endif %}
+    </template>
+    
+  
+</single-item>
