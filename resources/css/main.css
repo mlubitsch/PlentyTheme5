@@ -11,7 +11,8 @@
 .mobile-navigation.open ul.mainmenu li:nth-child(11),
 .mobile-navigation.open ul.mainmenu li:nth-child(13),
 .mobile-navigation.open ul.mainmenu li:nth-child(14),
-.mobile-navigation.open ul.mainmenu li:nth-child(16){
+.mobile-navigation.open ul.mainmenu li:nth-child(16),
+#menu-2 li{
     display: block;
 }
 .mobile-navigation.open ul.mainmenu li {
