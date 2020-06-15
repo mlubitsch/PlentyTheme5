@@ -1,7 +1,9 @@
 <!-- ITEM DESCRIPTION -->
 
 
-<slot name="itemviewboxes"></slot>
+<slot name="itemviewboxes">
+{{ item.documents[0].data | json_data }}
+</slot>
 
 
 
