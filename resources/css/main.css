@@ -7,7 +7,7 @@
 }
 */
 .megamenu .collapse{top: 33px;}
-#mainNavbarCollapsable ul:not(.nav-dropdown-inner) li:hover{
+#mainNavbarCollapsable ul:not(.collapse) li:hover{
     background-color: #e30d7c;    
 }
 #mainNavbarCollapsable ul.mainmenu,
