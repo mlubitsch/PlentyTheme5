@@ -6,6 +6,19 @@
     padding-left: 0;
 }
 */
+/** ONLY B2C-SHOP **/
+.mobile-navigation.open ul.mainmenu li:nth-child(9),
+.mobile-navigation.open ul.mainmenu li:nth-child(11),
+.mobile-navigation.open ul.mainmenu li:nth-child(13),
+.mobile-navigation.open ul.mainmenu li:nth-child(14),
+.mobile-navigation.open ul.mainmenu li:nth-child(16){
+    display: block;
+}
+.mobile-navigation.open ul.mainmenu li {
+    display: none;
+}
+/** END ONLY B2C-SHOP **/
+
 .megamenu .collapse{top: 33px;}
 #mainNavbarCollapsable ul.mainmenu li:hover{
     background-color: #e30d7c;    
